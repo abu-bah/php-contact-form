@@ -10,6 +10,14 @@ In your terminal, please navigate to the root directory of the project and run t
 
 `$ composer install`
 
+#### Set up and configure .env file
+
+Create a `.env` file in the project's root directory and copy the contents of the `.env.example` file into the new `.env` file.
+
+Configure the `.env` file to use the correct database credentials.
+
+#### Launching the app 
+
 To launch the project in your browser, simply run the following command in your root directory:
 
 `$ php -S 127.0.0.1:9999 -t public`
