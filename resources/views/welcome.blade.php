@@ -146,6 +146,16 @@
 <!-- Theme JavaScript -->
 <script src="js/grayscale.min.js"></script>
 
+<script>
+    $(document).ready(function () {
+        if ($('#contact-alert-success').length > 0) {
+            $('html, body').animate({
+                scrollTop: $('#contact-alert-success').offset().top - 250
+            }, 'slow');
+        }
+    });
+</script>
+
 </body>
 
 </html>

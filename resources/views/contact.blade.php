@@ -2,7 +2,7 @@
 
     <!-- Success message -->
     @if(Session::has('success'))
-        <div class="alert alert-success">
+        <div class="alert alert-success" id="contact-alert-success">
             {{Session::get('success')}}
         </div>
     @endif
