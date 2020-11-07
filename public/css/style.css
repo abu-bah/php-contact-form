@@ -1,0 +1,38 @@
+.contact-container {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.contact-container form {
+    border: 1px solid #575757;
+    background: #6f6f6f;
+    padding: 40px 50px 45px
+}
+
+.contact-container .form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+label {
+    font-weight: 600;
+}
+
+.contact-container .error {
+    color: red;
+    font-weight: 400;
+    display: block;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.contact-container .form-control.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}
+
+.contact-container form input[type=button] {
+
+}
