@@ -1,13 +1,19 @@
 .contact-container {
     max-width: 500px;
-    margin: 50px auto;
+    margin: 40px auto;
     text-align: left;
 }
 
 .contact-container form {
+    font-size: 20px;
+    padding: 40px 50px;
     border: 1px solid #575757;
     background: #6f6f6f;
-    padding: 40px 50px 45px
+}
+
+.contact-container form input[type=text],
+.contact-container form input[type=email] {
+    font-size: 20px;
 }
 
 .contact-container .form-control:focus {
@@ -24,7 +30,7 @@ label {
     font-weight: 400;
     display: block;
     padding: 6px 0;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .contact-container .form-control.error {
@@ -60,6 +66,7 @@ label {
 
 .divider span:nth-child(2) {
     color: #fff; padding: 0px 20px; width: auto; white-space: nowrap;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .divider span:last-child {

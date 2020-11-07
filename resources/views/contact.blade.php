@@ -11,6 +11,9 @@
 
         @csrf
 
+        * = required fields
+        <br><br>
+
         <div class="form-group">
             <label>Name*</label>
             <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name" value="{{ old('name') }}">
