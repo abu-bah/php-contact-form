@@ -48,6 +48,17 @@
             @endif
         </div>
 
+        <div class="form-group">
+            <label>Message*</label>
+            <textarea type="text" class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message">{{ old('message') }}</textarea>
+
+            @if ($errors->has('message'))
+                <div class="error">
+                    {{ $errors->first('message') }}
+                </div>
+            @endif
+        </div>
+
         <input type="submit" name="send" value="Submit" class="btn btn-default btn-block">
     </form>
 </div>
