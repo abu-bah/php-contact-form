@@ -116,6 +116,9 @@
         <div class="col-lg-8 col-lg-offset-2">
             <h2>Contact Guy Smiley</h2>
             <p>Remember Guy Smiley?  Yeah, he wants to hear from you.</p>
+
+            <div class="divider"><span></span><span>WHO ARE YOU?</span><span></span></div>
+
             @include('contact')
         </div>
     </div>
@@ -150,11 +153,11 @@
     $(document).ready(function () {
         if ($('#contact-alert-success').length > 0) {
             $('html, body').animate({
-                scrollTop: $('#contact-alert-success').offset().top - 250
+                scrollTop: $('#contact-alert-success').offset().top - 350
             }, 'slow');
         } else if ($('.error').length > 0) {
             $('html, body').animate({
-                scrollTop: $('.error').offset().top - 250
+                scrollTop: $('.error').offset().top - 350
             }, 'slow');
         }
     });
