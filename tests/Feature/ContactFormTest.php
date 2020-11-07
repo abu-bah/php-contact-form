@@ -18,17 +18,19 @@ class ContactFormTest extends TestCase
         $data = [
             'name' => 'Abu Bah',
             'email' => 'bbah95@gmail.com',
-            'phone' => '8626860105'
+            'phone' => '8626860105',
+            'message' => 'test message'
         ];
 
         Contact::create($data);
 
-        $storedContact = Contact::where('name', '=', 'Abu Bah')->first();
+        $storedContact = Contact::where('name', '=', 'Abu Bah')->orderBy('created_at', 'desc')->first();
 
         $storedData = [
             'name' => $storedContact->name,
             'email' => $storedContact->email,
-            'phone' => $storedContact->phone
+            'phone' => $storedContact->phone,
+            'message' => $storedContact->message
         ];
 
         $this->assertSame($data, $storedData);
