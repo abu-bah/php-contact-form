@@ -8,8 +8,6 @@ In your terminal, please navigate to the root directory of the project and run t
 
 `$ php artisan migrate`
 
-`$ npm install`
-
 `$ composer install`
 
 To launch the project in your browser, simply run the following command in your root directory:
