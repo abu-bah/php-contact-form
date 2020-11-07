@@ -6,9 +6,9 @@ This was done for the Dealer Inspire PHP Code challenge.
 
 In your terminal, please navigate to the root directory of the project and run the following commands:
 
-`$ php artisan migrate`
-
 `$ composer install`
+
+`$ php artisan migrate`
 
 #### Set up and configure .env file
 
