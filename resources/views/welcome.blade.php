@@ -152,6 +152,10 @@
             $('html, body').animate({
                 scrollTop: $('#contact-alert-success').offset().top - 250
             }, 'slow');
+        } else if ($('.error').length > 0) {
+            $('html, body').animate({
+                scrollTop: $('.error').offset().top - 250
+            }, 'slow');
         }
     });
 </script>
